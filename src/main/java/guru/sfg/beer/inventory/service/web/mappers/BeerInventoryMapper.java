@@ -5,9 +5,9 @@ import guru.sfg.beer.inventory.service.web.model.BeerInventoryDto;
 import org.mapstruct.Mapper;
 
 /**
- * Created by jt on 2019-05-31.
+ * Modified by Pierrot on 2022-12-12.
  */
-@Mapper(uses = {DateMapper.class})
+@Mapper
 public interface BeerInventoryMapper {
 
     BeerInventory beerInventoryDtoToBeerInventory(BeerInventoryDto beerInventoryDTO);

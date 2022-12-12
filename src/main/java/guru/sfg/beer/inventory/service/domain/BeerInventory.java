@@ -24,7 +24,7 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
@@ -37,7 +37,7 @@ import java.util.UUID;
 public class BeerInventory extends BaseEntity{
 
     @Builder
-    public BeerInventory(UUID id, Long version, Timestamp createdDate, Timestamp lastModifiedDate, UUID beerId,
+    public BeerInventory(UUID id, Long version, LocalDateTime createdDate, LocalDateTime lastModifiedDate, UUID beerId,
                          String upc, Integer quantityOnHand) {
         super(id, version, createdDate, lastModifiedDate);
         this.beerId = beerId;
